@@ -12,31 +12,31 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="body">
 
-  <header class="header">
+  <header class="header" id="header__top">
     <div class="container">
       <div class="header__inner">
         <div class="header__top">
-          <a class="logo" href="#">
+          <a class="logo" href="#body">
             <img class="logo__link" src="img/logo.png" alt="лого">
           </a>
-          <ul class="menu">
+          <ul class="menu menu--adaptive">
 
-            <li class="menu__item">
-              <a class="menu__link" href="#">Главаня</a>
+            <li class="menu__item menu__item--adaptive">
+              <a class="menu__link" href="#header__top">Главаня</a>
             </li>
 
-            <li class="menu__item">
-              <a class="menu__link" href="#">О нас</a>
+            <li class="menu__item menu__item--adaptive">
+              <a class="menu__link" href="#about">О нас</a>
             </li>
 
-            <li class="menu__item">
-              <a class="menu__link" href="#">Почему мы?</a>
+            <li class="menu__item menu__item--adaptive">
+              <a class="menu__link" href="#benefits">Почему мы?</a>
             </li>
 
-            <li class="menu__item">
-              <a class="menu__link" href="#">Контакты</a>
+            <li class="menu__item menu__item--adaptive">
+              <a class="menu__link" href="#contacts">Контакты</a>
             </li>
 
           </ul>
@@ -89,7 +89,7 @@
 
   <main>
 
-    <div class="desc">
+    <div class="desc" id="about">
       <div class="container">
         <div class="desc__inner">
           <div class="desc__text">
@@ -109,7 +109,7 @@
       </div>
     </div>
 
-    <div class="benefits">
+    <div class="benefits" id="benefits">
       <div class="container">
         <ul class="benefits__inner">
           <li class="benefits__item">
@@ -200,7 +200,7 @@
       </div>
     </div>
     
-    <section class="products">
+    <section class="products" id="catalog">
       <div class="container">
         <div class="products__inner">
           <h2 class="title">Немного нашего продукта</h2>
@@ -291,7 +291,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="products">
       <div class="container">
         <div class="about__inner">
           <h3 class="subtitle subtitle--margin">
@@ -313,7 +313,7 @@
       </div>
     </section>
 
-    <section class="brands">
+    <section class="brands" id="contacts">
       <h2 class="title">С какими брендами мы работаем</h2>
       <ul class="brands__list">
 
@@ -359,7 +359,7 @@
             <ul class="brands__connection">
 
               <li class="brands__social">
-                <a class="brands__link" href="">
+                <a class="brands__link" href="https://ru-ru.facebook.com">
                   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.5">
                       <path
@@ -371,7 +371,7 @@
               </li>
 
               <li class="brands__social">
-                <a class="brands__link" href="">
+                <a class="brands__link" href="https://telegram.org">
                   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.5">
                       <path
@@ -384,7 +384,7 @@
 
 
               <li class="brands__social">
-                <a class="brands__link" href="">
+                <a class="brands__link" href="https://www.instagram.com">
                   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.5">
                       <path
@@ -397,7 +397,7 @@
 
 
               <li class="brands__social">
-                <a class="brands__link" href="">
+                <a class="brands__link" href="https://twitter.com/home">
                   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.5" clip-path="url(#clip0)">
                       <path
@@ -435,35 +435,36 @@
     <div class="container">
       <div class="footer__inner">
         <div class="footer__top">
-          <a class="logo logo--margin" href="#">
+          <a class="logo logo--margin" href="#body">
             <img class="logo__link" src="img/logo.png" alt="лого">
           </a>
 
-          <ul class="footer__list">
+          <ul class="menu menu--dispaly">
 
-            <li class="footer__item">
-              <a class="footer__link" href="">Главная</a>
+            <li class="menu__item menu__item-footer">
+              <a class="menu__link menu__link-footer" href="#header__top">Главаня</a>
             </li>
 
-            <li class="footer__item">
-              <a class="footer__link" href="">О нас</a>
+            <li class="menu__item menu__item-footer">
+              <a class="menu__link menu__link-footer" href="#about">О нас</a>
             </li>
 
-            <li class="footer__item">
-              <a class="footer__link" href="">Почему мы?</a>
+            <li class="menu__item menu__item-footer">
+              <a class="menu__link menu__link-footer" href="#benefits">Почему мы?</a>
             </li>
 
-            <li class="footer__item">
-              <a class="footer__link" href="">Ваша продукция</a>
+            <li class="menu__item menu__item-footer">
+              <a class="menu__link menu__link-footer" href="#products">Ваша продукция</a>
             </li>
 
-            <li class="footer__item">
-              <a class="footer__link" href="">Каталог</a>
+            <li class="menu__item menu__item-footer">
+              <a class="menu__link menu__link-footer" href="#catalog">Каталог</a>
             </li>
 
-            <li class="footer__item">
-              <a class="footer__link" href="">Контакты</a>
+            <li class="menu__item menu__item-footer">
+              <a class="menu__link menu__link-footer" href="#contacts">Контакты</a>
             </li>
+
           </ul>
 
           <address class="footer__address">

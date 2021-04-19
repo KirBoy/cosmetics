@@ -1,4 +1,4 @@
-$('.header__btn, .menu').on('click', function () {
+$('.header__btn, .menu--adaptive').on('click', function () {
   $('.menu').toggleClass('menu--active');
   $('.header__btn').toggleClass('header__btn--active');
 });
@@ -32,3 +32,36 @@ $('.brands__list').slick({
     }
   ]
 });
+
+$(".menu a, .logo").on("click", function (event) {
+    
+  event.preventDefault();
+
+  var id  = $(this).attr('href'),
+    top = $(id).offset().top;
+
+  $('body,html').animate({scrollTop: top}, 1500);
+});
+
+
+var header = $("#header__top"),
+  aboutH = $("#about").innerHeight(),
+  scrollOffset = $(window).scrollTop();
+
+
+/* Fixed Header */
+checkScroll(scrollOffset);
+
+$(window).on("scroll", function () {
+  scrollOffset = $(this).scrollTop();
+
+  checkScroll(scrollOffset);
+});
+
+function checkScroll(scrollOffset) {
+  if (scrollOffset >= aboutH) {
+    header.addClass("fixed");
+  } else {
+    header.removeClass("fixed");
+  }
+}
