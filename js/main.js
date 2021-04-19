@@ -11,6 +11,8 @@ $('.brands__list').slick({
     {
       breakpoint: 979,
       settings: {
+        autoplay: true,
+        speed: 300,
         slidesToShow: 4
       }
     },
